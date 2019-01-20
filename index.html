@@ -1,18 +1,1 @@
-<script type="text/javascript">
-function getQueryString(name) {
-	let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-	let par = window.location.search.substr(1).match(reg);
-	if (par != null) {
-		return unescape(par[2]);
-	} else {
-		return null;
-	}
-}
-let encodeUrl = getQueryString("url");
-if (encodeUrl != null) {
-    let url = atob(encodeUrl);
-    window.location.href = url;
-} else {
-    document.write("<center><h1>404</h1></center>");
-}
-</script>
+<meta http-equiv="refresh" content="0;url=short.html"/>
