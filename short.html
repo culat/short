@@ -11,8 +11,11 @@ function getQueryString(name) {
 }
 let encodeUrl = getQueryString("url");
 if (encodeUrl != null) {
+	document.write("<center><h1>Please wait...</h1></center>");
     let url = atob(encodeUrl);
-    window.location.href = url;
+	setTimeout(function() {
+		window.location.href = url;
+	}, 2000);
 } else {
     document.write("<center><h1>404</h1></center>");
 }
